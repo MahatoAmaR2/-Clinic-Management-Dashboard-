@@ -1,8 +1,16 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from "./components/Navbar"
 
-const App = () => {
+
+
+
+function App() {
   return (
-    <div className='text-3xl text-amber-300'>Har Har Mahadev</div>
-  )
+    <Router>
+      <Navbar/>
+    </Router>
+  );
 }
 
-export default App
+export default App;
