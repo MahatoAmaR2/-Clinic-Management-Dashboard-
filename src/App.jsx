@@ -1,15 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from "./components/Navbar"
 
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./layout/Layout";
+import Dashboard from "./pages/Dashboard";
+import Appointments from "./pages/Appointments";
 
 
 function App() {
   return (
-    <Router>
-      <Navbar/>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/appointments" element={<Appointments />} />
+        </Route>
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

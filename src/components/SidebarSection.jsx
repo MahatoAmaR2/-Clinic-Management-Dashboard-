@@ -1,12 +1,23 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const SidebarSection = ({ Icon, text }) => {
+const SidebarSection = ({ Icon, text, to }) => {
   return (
     <>
-      <div className="flex pl-5 mt-2 cursor-pointer hover:bg-green-100/60 hover:text-[#2E8075] text-gray-500 py-2 border-r-4 border-transparent hover:border-[#2E8075] transition-all duration-800 transition-color ease-in-out">
+      <NavLink
+        to={to}
+        className={({ isActive }) =>
+          `flex items-center pl-5 py-2 mt-2 cursor-pointer transition-all duration-300
+         ${
+           isActive
+             ? "bg-red-100/60 text-[#ff3232] border-r-4 border-[#f53636]"
+             : "text-gray-600 hover:bg-gray-100"
+         }`
+        }
+      >
         <Icon size={24} className="" />
         <span className="ml-3 font-semibold">{text}</span>
-      </div>
+      </NavLink>
     </>
   );
 };

@@ -20,10 +20,7 @@ const Header = () => {
         <Sidebar />
       </div>
 
-
-      <div className="navbar flex justify-between items-center pr-4 py-2 w-full bg-white h-16 shadow relative z-30">
-        
-        
+      <div className="navbar flex justify-between items-center pr-4 py-2 w-full bg-white h-16 shadow fixed z-30 ">
         <div className="flex items-center gap-3 ml-5">
           <button
             className="md:hidden p-2 rounded hover:bg-gray-100"
@@ -35,21 +32,20 @@ const Header = () => {
               <FaBars size={20} className="text-gray-700" />
             )}
           </button>
-<div className="h-16 hidden flex-col items-center justify-center md:flex">
-                  <div className="logo flex items-center gap-2">
-                    <TbActivityHeartbeat size={40} color="red" />
-                    <p className="font-medium text-2xl text-gray-800">
-                      Me
-                      <span className="font-extralight text-2xl text-gray-500">
-                        Care
-                      </span>
-                    </p>
-                  </div>
-                  <p className="text-sm text-gray-400 font-medium">
-                  Clinic Management Dashboard 
-
-                  </p>
-                </div>
+          <div className="h-16 hidden flex-col items-center justify-center md:flex">
+            <div className="logo flex items-center gap-2">
+              <TbActivityHeartbeat size={40} color="red" />
+              <p className="font-medium text-2xl text-gray-800">
+                Me
+                <span className="font-extralight text-2xl text-gray-500">
+                  Care
+                </span>
+              </p>
+            </div>
+            <p className="text-sm text-gray-400 font-medium">
+              Clinic Management Dashboard
+            </p>
+          </div>
           <div className="relative pl-2 md:ml-12">
             <input
               type="text"
@@ -63,7 +59,11 @@ const Header = () => {
         </div>
 
         <div className="right flex items-center gap-4">
-          <IoIosNotificationsOutline size={25} color="black" className=" transform transition-transform duration-200 hover:scale-110 cursor-pointer"/>
+          <IoIosNotificationsOutline
+            size={25}
+            color="black"
+            className=" transform transition-transform duration-200 hover:scale-110 cursor-pointer"
+          />
           <span className="border-l-2 border-gray-300 h-6"></span>
           <img
             className="profile-pic rounded-full w-10 h-10  transform transition-transform duration-200 hover:scale-110 cursor-pointer"
@@ -71,7 +71,11 @@ const Header = () => {
             alt="Profile"
           />
           <p className="text-black text-sm font-semibold">Musk</p>
-          <FaCaretDown size={18} color="gray" className=" transform transition-transform duration-200 hover:scale-80 cursor-pointer"/>
+          <FaCaretDown
+            size={18}
+            color="gray"
+            className=" transform transition-transform duration-200 hover:scale-80 cursor-pointer"
+          />
         </div>
       </div>
     </div>
