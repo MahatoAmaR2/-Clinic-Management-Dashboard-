@@ -107,7 +107,7 @@ const Patients = () => {
               </p>
             </div>
 
-            <button className="mt-4 w-full bg-red-500 text-white py-2 rounded-lg font-medium hover:bg-red-600 transition">
+            <button className="mt-4 w-full bg-red-500 text-white py-2 rounded font-medium hover:bg-red-600 transition cursor-pointer">
               View Details
             </button>
           </div>
