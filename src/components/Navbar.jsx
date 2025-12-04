@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { FaCaretDown, FaSearch, FaBars, FaTimes } from "react-icons/fa";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar.jsx";
 import profileImg from "../assets/profile.jpeg";
 import { TbActivityHeartbeat } from "react-icons/tb";
 
