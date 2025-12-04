@@ -51,7 +51,7 @@ const initialPatients = [
 
 const Patients = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  
+
   const filteredPatients = initialPatients.filter((patient) =>
     patient.name.toLowerCase().includes(searchTerm.toLowerCase())
   );

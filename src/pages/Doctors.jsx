@@ -69,7 +69,7 @@ const Doctors = () => {
         <h2 className="text-2xl font-bold text-red-600">Doctors List</h2>
 
         <div className="md:mt-0 mt-4 w-full sm:w-80 relative">
-          <CiSearch 
+          <CiSearch
             className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
             size={22}
           />
