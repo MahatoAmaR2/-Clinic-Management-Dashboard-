@@ -58,11 +58,11 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="right flex items-center gap-4">
+        <div className="right flex items-center gap-4 ml-2">
           <IoIosNotificationsOutline
             size={25}
             color="black"
-            className=" transform transition-transform duration-200 hover:scale-110 cursor-pointer"
+            className=" transform transition-transform duration-200 hover:scale-110 cursor-pointer "
           />
           <span className="border-l-2 border-gray-300 h-6"></span>
           <img
