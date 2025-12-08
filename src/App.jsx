@@ -6,6 +6,8 @@ import Patients from "./pages/Patients";
 import Doctors from "./pages/Doctors";
 import Help from "./pages/Help";
 import Settings from "./pages/Setting"
+import Report from "./pages/Report"
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +18,7 @@ function App() {
           <Route path="/patients" element={<Patients />} />
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/help" element={<Help/>}/>
+          <Route path="settings" element={<Settings/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
