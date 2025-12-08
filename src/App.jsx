@@ -5,8 +5,8 @@ import Appointments from "./pages/Appointments";
 import Patients from "./pages/Patients";
 import Doctors from "./pages/Doctors";
 import Help from "./pages/Help";
-import Settings from "./pages/Setting"
-import Report from "./pages/Report"
+import Settings from "./pages/Setting";
+import Report from "./pages/Report";
 
 function App() {
   return (
@@ -17,8 +17,9 @@ function App() {
           <Route path="/appointments" element={<Appointments />} />
           <Route path="/patients" element={<Patients />} />
           <Route path="/doctors" element={<Doctors />} />
-          <Route path="/help" element={<Help/>}/>
-          <Route path="settings" element={<Settings/>}/>
+          <Route path="/help" element={<Help />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="report" element={<Report />} />
         </Route>
       </Routes>
     </BrowserRouter>
