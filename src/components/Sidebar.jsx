@@ -56,7 +56,7 @@ const Sidebar = () => {
 
             <SidebarSection
               Icon={BsPatchExclamation}
-              text="Help & Center"
+              text="Help & Support"
               to="/help"
             />
             <SidebarSection Icon={CiSettings} text="Settings" to="/settings" />

@@ -4,7 +4,8 @@ import Dashboard from "./pages/Dashboard";
 import Appointments from "./pages/Appointments";
 import Patients from "./pages/Patients";
 import Doctors from "./pages/Doctors";
-
+import Help from "./pages/Help";
+import Settings from "./pages/Setting"
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
           <Route path="/appointments" element={<Appointments />} />
           <Route path="/patients" element={<Patients />} />
           <Route path="/doctors" element={<Doctors />} />
+          <Route path="/help" element={<Help/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
