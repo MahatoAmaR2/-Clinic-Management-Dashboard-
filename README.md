@@ -11,8 +11,8 @@ Built with **React (Vite)** and styled with **Tailwind CSS**.
 ---
 
 ## 🚀 Live Demo  
-🔗 **Live Site:** 
-🔗 **Source Code:** https://github.com/MahatoAmaR2/-Clinic-Management-Dashboard- 
+🔗**Live Site:** https://mecareee.netlify.app/ 
+🔗**Source Code:** https://github.com/MahatoAmaR2/-Clinic-Management-Dashboard- 
 
 ---
 ## ✨ Features
