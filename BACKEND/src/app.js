@@ -9,7 +9,9 @@ app.use(cookieParser());
 
 // routes import
 import userRouter from "./routes/auth.routes.js";
+import doctorRoutes from "./routes/doctor.routes.js";
 
 app.use("/api/auth", userRouter);
+app.use("/api/doctors", doctorRoutes);
 
 export { app };
