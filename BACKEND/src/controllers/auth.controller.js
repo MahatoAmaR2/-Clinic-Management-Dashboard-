@@ -111,6 +111,7 @@ export const logout = async (req, res) => {
   }
 };
 
+// ------------------------- UPDATE PASSWORD ---------------
 export const updatePassword = async (req, res) => {
   try {
     const { oldPassword, newPassword } = req.body;
@@ -147,5 +148,33 @@ export const updatePassword = async (req, res) => {
   } catch (error) {
     console.error("Update password error:", error);
     res.status(500).json({ message: "Server error" });
+  }
+};
+
+// ------------------------- UPDATE ROLE------
+export const updateRole = async (req, res) => {
+  try {
+    const { role } = req.body;
+
+    if (!["admin", "doctor", "staff"].includes(role)) {
+      return res.status(400).json({ message: "Invalid role" });
+    }
+
+    const user = await User.findByIdAndUpdate(
+      req.params.id,
+      { role },
+      { new: true }
+    ).select("-password");
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    res.status(200).json({
+      message: "User role updated successfully",
+      user,
+    });
+  } catch (error) {
+    res.status(500).json({ message: "Failed to update role" });
   }
 };
